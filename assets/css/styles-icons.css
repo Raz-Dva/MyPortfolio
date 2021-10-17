@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-5";
+  src:url("../fonts/untitled-font-5.eot");
+  src:url("../fonts/untitled-font-5.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/untitled-font-5.woff") format("woff"),
+    url("../fonts/untitled-font-5.ttf") format("truetype"),
+    url("../fonts/untitled-font-5.svg#untitled-font-5") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-5" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-5" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook-alt:before {
+  content: "\61";
+}
+.icon-linkedin-alt:before {
+  content: "\63";
+}
+.icon-adaptive-icon-2:before {
+  content: "\48";
+}
+.icon-drawing:before {
+  content: "\49";
+}
+.icon-583347ca8f6c7ee058111edf-120-designer-icons-1:before {
+  content: "\4a";
+}
+.icon-583347ca8f6c7ee058111edf-120-designer-icons2:before {
+  content: "\4d";
+}
+.icon-perfect-pixel:before {
+  content: "\4f";
+}
+.icon-letter:before {
+  content: "\39";
+}
+.icon-mean-1:before {
+  content: "\2e";
+}
+.icon-compress:before {
+  content: "\66";
+}
+.icon-arrow-circle-up:before {
+  content: "\69";
+}
+.icon-minus:before {
+  content: "\62";
+}
+.icon-skype:before {
+  content: "\64";
+}
+.icon-git-square:before {
+  content: "\65";
+}
+.icon-user:before {
+  content: "\67";
+}
+.icon-call-phone:before {
+  content: "\68";
+}
+.icon-check-circle-o:before {
+  content: "\6a";
+}
+.icon-ban:before {
+  content: "\6b";
+}
+.icon-check:before {
+  content: "\6c";
+}
+.icon-x:before {
+  content: "\6d";
+}
+.icon-rxjs-icon:before {
+  content: "\6e";
+}
+.icon-angular-icon:before {
+  content: "\6f";
+}
+.icon-reviews:before {
+  content: "\70";
+}
