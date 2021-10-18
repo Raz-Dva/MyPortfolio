@@ -161,7 +161,7 @@ $(document).ready(function () {
             let dataform = new FormData(mailForm);
             var objSend = {};
             dataform.forEach((value, key) => objSend[key] = value);
-            fetch('', {
+            fetch('/', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
