@@ -4,8 +4,8 @@ $(document).ready(function () {
         transVal,
         i,
         item_menu = menuLeft.children(),
-         booling = true,
-         heightWin = $(window).height();
+        booling = true,
+        heightWin = $(window).height();
     $(".button_menu").click(function () {
         $(this).toggleClass("button_cross");
         menuLeft.toggleClass("menu_visible menu_hidden");
@@ -28,7 +28,7 @@ $(document).ready(function () {
             transVal = 5;
             for (i = 0; i < item_menu.length; ++i) {
                 delayVal++;
-                transVal+= 10;
+                transVal += 10;
                 $(".menu_visible").find(item_menu[i]).css({
                     "-webkit-animation-delay": (delayVal / 25) + "s",
                     "animation-delay": (delayVal / 25) + "s",
@@ -161,7 +161,7 @@ $(document).ready(function () {
             let dataform = new FormData(mailForm);
             var objSend = {};
             dataform.forEach((value, key) => objSend[key] = value);
-            fetch('/', {
+            fetch('', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
