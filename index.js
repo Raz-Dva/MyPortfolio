@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+require("dotenv").config()
 const nodemailer = require('nodemailer');
 const PORT = process.env.PORT || 3000;
 app.use(express.static('assets'));
@@ -12,11 +13,8 @@ app.post('/', (req, res) => {
         port: 465,
         secure: true,
         auth: {
-            // user: "honcharov@zohomail.eu",
-            // pass: "H5QEu5HJ0ETX"  
-            /////////////////////// add env. file
-            user:process.env.MAIL_USER,
-            pass:process.env.MAIL_PASS,
+            user: process.env.MAIL_USER,
+            pass: process.env.MAIL_PASS,
         }
     });
     var message =
@@ -26,15 +24,15 @@ Phone: ${req.body.phone}
 ${req.body.message}`
 
     const messageOptions = {
-        from:'honcharov@zohomail.eu',
+        from: 'honcharov.ivan.1987@gmail.com',
         // from: req.body.email,
         subject: "My Portfolio",
         text: message,
-        to: "honcharov@zohomail.eu"
+        to: "honcharov.ivan.1987@gmail.com"
     };
     transporter.sendMail(messageOptions, (err, info) => {
         if (err) {
-            console.log(err);            
+            console.log(err);
             return res.status(500).send('Your message has not been sent! ')
         }
         // console.log(info);
