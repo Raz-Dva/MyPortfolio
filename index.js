@@ -13,10 +13,10 @@ app.post('/', (req, res) => {
         port: 465,
         secure: true,
         auth: {
-            // user: process.env.MAIL_USER,
-            // pass: process.env.MAIL_PASS,
-            user: "honcharov.ivan.1987@gmail.com",
-            pass: "ygDf7BVtgK5C"
+            user: process.env.MAIL_USER,
+            pass: process.env.MAIL_PASS,
+            // user: "honcharov.ivan.1987@gmail.com",
+            // pass: "ygDf7BVtgK5C"
         }
     });
     var message =
