@@ -15,8 +15,6 @@ app.post('/', (req, res) => {
         auth: {
             user: process.env.MAIL_USER,
             pass: process.env.MAIL_PASS,
-            // user: "honcharov.ivan.1987@gmail.com",
-            // pass: "ygDf7BVtgK5C"
         }
     });
     var message =
